@@ -226,16 +226,57 @@ function clicked(element) {
     playMusic();
     playingSong();
 }
-// $('.icon-more').click(function() {
-//     $('.wrapper').addClass('click-hover');
-//     if ($(this).hasClass('red')) {
-//         $(this).addClass('blue').removeClass('red');
+// $('#open-player').on('click', function() {
+//     if ($('.wrapper').addClass('.wrapper.click-hover') == '.wrapper') {
+//         $('.wrapper').addClass('click-hover');
 //     } else {
-//         $(this).addClass('red').removeClass('blue');
+//         $('.wrapper').removeClass('click-hover');
 //     }
-
 // });
-// $('.icon-more').click(function() {
-//     $('.wrapper').addClass('click-hover');
-
-// });
+$('#open-player').click(function() {
+    if ($('.wrapper').hasClass('wrapper-click')) {
+        $('.wrapper').removeClass('wrapper-click');
+    } else {
+        $('.wrapper').addClass('wrapper-click');
+    }
+    if ($('.wrap-mp3__item').hasClass('wrap-mp3__item-click')) {
+        $('.wrap-mp3__item').removeClass('wrap-mp3__item-click');
+    } else {
+        $('.wrap-mp3__item').addClass('wrap-mp3__item-click');
+    }
+    if ($('.wrap-controls').hasClass('wrap-controls-click')) {
+        $('.wrap-controls').removeClass('wrap-controls-click');
+    } else {
+        $('.wrap-controls').addClass('wrap-controls-click');
+    }
+    if ($('.wrap-topbar').hasClass('wrap-topbar-click')) {
+        $('.wrap-topbar').removeClass('wrap-topbar-click');
+    } else {
+        $('.wrap-topbar').addClass('wrap-topbar-click');
+    }
+    if ($('.img-area').hasClass('img-area-click')) {
+        $('.img-area').removeClass('img-area-click');
+    } else {
+        $('.img-area').addClass('img-area-click');
+    }
+    if ($('.song-details').hasClass('song-details-click')) {
+        $('.song-details').removeClass('song-details-click');
+    } else {
+        $('.song-details').addClass('song-details-click');
+    }
+    if ($('.wrap-mp3').hasClass('wrap-mp3-click')) {
+        $('.wrap-mp3').removeClass('wrap-mp3-click');
+    } else {
+        $('.wrap-mp3').addClass('wrap-mp3-click');
+    }
+    if ($('.name').hasClass('name-click')) {
+        $('.name').removeClass('name-click');
+    } else {
+        $('.name').addClass('name-click');
+    }
+    if ($('.expand_more').hasClass('icon-more-click')) {
+        $('.expand_more').removeClass('icon-more-click');
+    } else {
+        $('.expand_more').addClass('icon-more-click');
+    }
+});
