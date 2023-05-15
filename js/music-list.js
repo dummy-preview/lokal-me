@@ -1,46 +1,40 @@
 let allMusic = [{
-        name: "Harley Bird - Home",
-        artist: "Jordan Schor",
-        album: "Pop Seblay (2022)",
-        img: "music-1",
-        src: "music-1",
+        name: "Carpe Diem",
+        artist: "Rand Slam",
+        album: "Carpe Diem",
+        img: "carpe-diem",
+        src: "11 Carpe Diem",
         thumbnail: "images/music-1.jpg",
     },
     {
-        name: "Ikson Anywhere – Ikson",
-        artist: "Audio Library",
-        album: "Pop Seblay (2022)",
-        img: "music-2",
-        src: "music-2"
+        name: "Birahi",
+        artist: "Baiu Progress",
+        album: "Single Track",
+        img: "birahi",
+        src: "BIRAHI"
     },
     {
-        name: "Beauz & Jvna - Crazy",
-        artist: "Beauz & Jvna",
-        album: "Pop Seblay (2022)",
-        img: "music-3",
-        src: "music-3"
+        name: "7km Freestyle",
+        artist: "Nartok",
+        album: "Dao",
+        img: "7km",
+        src: "11 7km Freestyle"
     },
     {
-        name: "Hardwind - Want Me",
-        artist: "Mike Archangelo",
-        album: "Pop Seblay (2022)",
-        img: "music-4",
-        src: "music-4"
+        name: "Warta Merta",
+        artist: "Joe Million",
+        album: "Bombardir!",
+        img: "bombardir",
+        src: "06 Warta Merta"
     },
     {
-        name: "Jim - Sun Goes Down",
-        artist: "Jim Yosef x Roy",
-        album: "Pop Seblay (2022)",
-        img: "music-5",
-        src: "music-5"
+        name: "Panjang Umur",
+        artist: "Rand Slam",
+        album: "Rimajinasi",
+        img: "timajinasi",
+        src: "01 Panjang Umur"
     },
-    {
-        name: "Lost Sky - Vision NCS",
-        artist: "NCS Release",
-        album: "Pop Seblay (2022)",
-        img: "music-6",
-        src: "music-6"
-    },
+
     // like this paste it and remember to give comma after ending of this bracket }
     // {
     //   name: "Here is the music name",

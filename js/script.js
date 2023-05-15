@@ -2,6 +2,7 @@ const wrapper = document.querySelector(".wrapper"),
     musicImg = wrapper.querySelector(".img-area img"),
     musicName = wrapper.querySelector(".song-details .name"),
     musicArtist = wrapper.querySelector(".song-details .artist"),
+    musicAlbum = wrapper.querySelector(".song-details .album"),
     playPauseBtn = wrapper.querySelector(".play-pause"),
     prevBtn = wrapper.querySelector("#prev"),
     nextBtn = wrapper.querySelector("#next"),
@@ -23,7 +24,8 @@ window.addEventListener("load", () => {
 function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb - 1].name;
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
-    musicImg.src = `img/${allMusic[indexNumb - 1].src}.jpg`;
+    musicAlbum.innerText = allMusic[indexNumb - 1].album;
+    musicImg.src = `img/${allMusic[indexNumb - 1].img}.jpg`;
     mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
@@ -48,7 +50,7 @@ function prevMusic() {
     musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
-    playingSong();
+    // playingSong();
 }
 
 //next music function
@@ -58,7 +60,7 @@ function nextMusic() {
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
-    playingSong();
+    // playingSong();
 }
 
 // play or pause button event
@@ -66,7 +68,7 @@ playPauseBtn.addEventListener("click", () => {
     const isMusicPlay = wrapper.classList.contains("paused");
     //if isPlayMusic is true then call pauseMusic else call playMusic
     isMusicPlay ? pauseMusic() : playMusic();
-    playingSong();
+    // playingSong();
 });
 
 //prev music button event
