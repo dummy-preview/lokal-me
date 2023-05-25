@@ -32,14 +32,18 @@ function loadMusic(indexNumb) {
 //play music function
 function playMusic() {
     wrapper.classList.add("paused");
-    playPauseBtn.querySelector("i").innerText = "pause";
+    // playPauseBtn.querySelector("div").innerText = "pause";
+    document.querySelector('.play-mp3').style.display = 'none';
+    document.querySelector('.pause-mp3').style.display = 'block';
     mainAudio.play();
 }
 
 //pause music function
 function pauseMusic() {
     wrapper.classList.remove("paused");
-    playPauseBtn.querySelector("i").innerText = "play_arrow";
+    document.querySelector('.play-mp3').style.display = 'block';
+    document.querySelector('.pause-mp3').style.display = 'none';
+    // playPauseBtn.querySelector("div").innerText = "play_arrow";
     mainAudio.pause();
 }
 
@@ -50,7 +54,7 @@ function prevMusic() {
     musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
-    // playingSong();
+    playingSong();
 }
 
 //next music function
