@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // click target nav
     $('a[href^="#"]').bind('click.smoothscroll', function(e) {
         e.preventDefault();
         var target = this.hash,

@@ -18,7 +18,7 @@ isMusicPaused = true;
 
 window.addEventListener("load", () => {
     loadMusic(musicIndex);
-    // playingSong();
+    playingSong();
 });
 
 function loadMusic(indexNumb) {
@@ -64,7 +64,7 @@ function nextMusic() {
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
-    // playingSong();
+    playingSong();
 }
 
 // play or pause button event
@@ -72,7 +72,7 @@ playPauseBtn.addEventListener("click", () => {
     const isMusicPlay = wrapper.classList.contains("paused");
     //if isPlayMusic is true then call pauseMusic else call playMusic
     isMusicPlay ? pauseMusic() : playMusic();
-    // playingSong();
+    playingSong();
 });
 
 //prev music button event
@@ -126,161 +126,140 @@ progressArea.addEventListener("click", (e) => {
 
 //change loop, shuffle, repeat icon onclick
 // const repeatBtn = wrapper.querySelector("#repeat-plist");
-// repeatBtn.addEventListener("click", ()=>{
-//   let getText = repeatBtn.innerText; //getting this tag innerText
-//   switch(getText){
-//     case "repeat":
-//       repeatBtn.innerText = "repeat_one";
-//       repeatBtn.setAttribute("title", "Song looped");
-//       break;
-//     case "repeat_one":
-//       repeatBtn.innerText = "shuffle";
-//       repeatBtn.setAttribute("title", "Playback shuffled");
-//       break;
-//     case "shuffle":
-//       repeatBtn.innerText = "repeat";
-//       repeatBtn.setAttribute("title", "Playlist looped");
-//       break;
-//   }
+// repeatBtn.addEventListener("click", () => {
+//     let getText = repeatBtn.innerText; //getting this tag innerText
+//     switch (getText) {
+//         case "repeat":
+//             repeatBtn.innerText = "repeat_one";
+//             repeatBtn.setAttribute("title", "Song looped");
+//             break;
+//         case "repeat_one":
+//             repeatBtn.innerText = "shuffle";
+//             repeatBtn.setAttribute("title", "Playback shuffled");
+//             break;
+//         case "shuffle":
+//             repeatBtn.innerText = "repeat";
+//             repeatBtn.setAttribute("title", "Playlist looped");
+//             break;
+//     }
 // });
 
 //code for what to do after song ended
-mainAudio.addEventListener("ended", () => {
-    // we'll do according to the icon means if user has set icon to
-    // loop song then we'll repeat the current song and will do accordingly
-    let getText = repeatBtn.innerText; //getting this tag innerText
-    switch (getText) {
-        case "repeat":
-            nextMusic(); //calling nextMusic function
-            break;
-        case "repeat_one":
-            mainAudio.currentTime = 0; //setting audio current time to 0
-            loadMusic(musicIndex); //calling loadMusic function with argument, in the argument there is a index of current song
-            playMusic(); //calling playMusic function
-            break;
-        case "shuffle":
-            let randIndex = Math.floor((Math.random() * allMusic.length) + 1); //genereting random index/numb with max range of array length
-            do {
-                randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-            } while (musicIndex == randIndex); //this loop run until the next random number won't be the same of current musicIndex
-            musicIndex = randIndex; //passing randomIndex to musicIndex
-            loadMusic(musicIndex);
-            playMusic();
-            playingSong();
-            break;
-    }
-});
+// mainAudio.addEventListener("ended", () => {
 
-// const ulTag = document.querySelector(".mp3-list");
+//     let getText = repeatBtn.innerText;
+//     switch (getText) {
+//         case "repeat":
+//             nextMusic();
+//             break;
+//         case "repeat_one":
+//             mainAudio.currentTime = 0;
+//             loadMusic(musicIndex);
+//             playMusic();
+//             break;
+//         case "shuffle":
+//             let randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+//             do {
+//                 randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+//             } while (musicIndex == randIndex);
+//             musicIndex = randIndex;
+//             loadMusic(musicIndex);
+//             playMusic();
+//             playingSong();
+//             break;
+//     }
+// });
 
-// for (let i = 0; i < allMusic.length; i++) {
+const ulTag = document.querySelector(".mp3-list");
 
-//     allMusic.length = 5;
-//     let liTag = `<li class="bg-list" li-index="${i + 1}">
-//                 <div class="row">
-//                   <p class="name-list">${allMusic[i].name}</p>
-//                   <p class="album-list">${allMusic[i].artist}<span> - ${allMusic[i].album}</span></p>
-//                   <span id="${allMusic[i].src}" class="audio-duration duration-list">3:40 </span><span class="putar-list"> . Telah diputar <span>180.256.223</span> kali</span>
-//                 </div>
-//                 <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
-//               </li>`;
-//     ulTag.insertAdjacentHTML("beforeend", liTag);
+for (let i = 0; i < allMusic.length; i++) {
 
-//     let liAudioDuartionTag = ulTag.querySelector(`#${allMusic[i].src}`);
-//     let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
-//     liAudioTag.addEventListener("loadeddata", () => {
-//         let duration = liAudioTag.duration;
-//         let totalMin = Math.floor(duration / 60);
-//         let totalSec = Math.floor(duration % 60);
-//         if (totalSec < 10) {
-//             totalSec = `0${totalSec}`;
-//         };
-//         liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
-//         liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
-//     });
-// }
+    allMusic.length = 5;
+    let liTag = `<li class="bg-list" li-index="${i + 1}">
+    <div class="list-itemmp3">
+        <div class="list-mp3">
+            <div class="list-mp3__left">
+                <div class="list-mp3__left--wrap">
+                    <div class="list-mp3__thumbnail">
+                        <img src="img/${allMusic[i].img}.jpg" alt="">
+                        <div class="list-mp3__play">
+                            <img src="img/icon/btn-play.png" alt="">
+                        </div>
+                    </div>
+                    <div class="list-mp3__text">
+                        <div class="list-mp3__text--title">
+                            ${allMusic[i].name}
+                        </div>
+                        <div class="list-mp3__text--artist">
+                            <span class="mp3-artist">${allMusic[i].artist}</span> - <span class="mp3-album">${allMusic[i].album}</span>
+                        </div>
+                        <div class="list-mp3__text--duration">
+                            <span id="${allMusic[i].src}" class="audio-duration duration-list">3:40 </span> . <span>Telah diputar <span class="mp3-totalplay">180.256.223</span> kali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-mp3__right">
+                <div class="list-mp3__right--like">
+                    <a href="#">
+                        <div class="list-mp3__like">
+                            <img src="img/icon/like.png" alt="">
+                        </div>
+                    </a>
+                    <span>84K</span> orang menyukai
+                </div>
+            </div>
+        </div>
+        <img class="mp3-left" src="img/mp3-left.png" alt="">
+        <img class="mp3-right" src="img/mp3-right.png" alt="">
+        <img class="mp3-top" src="img/mp3-top.png" alt="">
+        <img class="mp3-bottom" src="img/mp3-bottom.png" alt="">
+    </div>
+    <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
+</li>`;
+    ulTag.insertAdjacentHTML("beforeend", liTag);
+
+    let liAudioDuartionTag = ulTag.querySelector(`#${allMusic[i].src}`);
+    let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
+    liAudioTag.addEventListener("loadeddata", () => {
+        let duration = liAudioTag.duration;
+        let totalMin = Math.floor(duration / 60);
+        let totalSec = Math.floor(duration % 60);
+        if (totalSec < 10) {
+            totalSec = `0${totalSec}`;
+        };
+        liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
+        liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+    });
+}
 
 //play particular song from the list onclick of li tag
-// function playingSong() {
-//     const allLiTag = ulTag.querySelectorAll("li");
+function playingSong() {
+    const allLiTag = ulTag.querySelectorAll("li");
 
-//     for (let j = 0; j < allLiTag.length; j++) {
-//         let audioTag = allLiTag[j].querySelector(".audio-duration");
+    for (let j = 0; j < allLiTag.length; j++) {
+        let audioTag = allLiTag[j].querySelector(".audio-duration");
 
-//         if (allLiTag[j].classList.contains("playing")) {
-//             allLiTag[j].classList.remove("playing");
-//             let adDuration = audioTag.getAttribute("t-duration");
-//             audioTag.innerText = adDuration;
-//         }
+        if (allLiTag[j].classList.contains("playing")) {
+            allLiTag[j].classList.remove("playing");
+            let adDuration = audioTag.getAttribute("t-duration");
+            audioTag.innerText = adDuration;
+        }
 
-//         if (allLiTag[j].getAttribute("li-index") == musicIndex) {
-//             allLiTag[j].classList.add("playing");
-//             audioTag.innerText = "Playing";
-//         }
+        if (allLiTag[j].getAttribute("li-index") == musicIndex) {
+            allLiTag[j].classList.add("playing");
+            audioTag.innerText = "Playing";
+        }
 
-//         allLiTag[j].setAttribute("onclick", "clicked(this)");
-//     }
-// }
+        allLiTag[j].setAttribute("onclick", "clicked(this)");
+    }
+}
 
 //particular li clicked function
 function clicked(element) {
     let getLiIndex = element.getAttribute("li-index");
-    musicIndex = getLiIndex; //updating current song index with clicked li index
+    musicIndex = getLiIndex;
     loadMusic(musicIndex);
     playMusic();
     playingSong();
 }
-// $('#open-player').on('click', function() {
-//     if ($('.wrapper').addClass('.wrapper.click-hover') == '.wrapper') {
-//         $('.wrapper').addClass('click-hover');
-//     } else {
-//         $('.wrapper').removeClass('click-hover');
-//     }
-// });
-$('#open-player').click(function() {
-    if ($('.wrapper').hasClass('wrapper-click')) {
-        $('.wrapper').removeClass('wrapper-click');
-    } else {
-        $('.wrapper').addClass('wrapper-click');
-    }
-    if ($('.wrap-mp3__item').hasClass('wrap-mp3__item-click')) {
-        $('.wrap-mp3__item').removeClass('wrap-mp3__item-click');
-    } else {
-        $('.wrap-mp3__item').addClass('wrap-mp3__item-click');
-    }
-    if ($('.wrap-controls').hasClass('wrap-controls-click')) {
-        $('.wrap-controls').removeClass('wrap-controls-click');
-    } else {
-        $('.wrap-controls').addClass('wrap-controls-click');
-    }
-    if ($('.wrap-topbar').hasClass('wrap-topbar-click')) {
-        $('.wrap-topbar').removeClass('wrap-topbar-click');
-    } else {
-        $('.wrap-topbar').addClass('wrap-topbar-click');
-    }
-    if ($('.img-area').hasClass('img-area-click')) {
-        $('.img-area').removeClass('img-area-click');
-    } else {
-        $('.img-area').addClass('img-area-click');
-    }
-    if ($('.song-details').hasClass('song-details-click')) {
-        $('.song-details').removeClass('song-details-click');
-    } else {
-        $('.song-details').addClass('song-details-click');
-    }
-    if ($('.wrap-mp3').hasClass('wrap-mp3-click')) {
-        $('.wrap-mp3').removeClass('wrap-mp3-click');
-    } else {
-        $('.wrap-mp3').addClass('wrap-mp3-click');
-    }
-    if ($('.name').hasClass('name-click')) {
-        $('.name').removeClass('name-click');
-    } else {
-        $('.name').addClass('name-click');
-    }
-    if ($('.expand_more').hasClass('icon-more-click')) {
-        $('.expand_more').removeClass('icon-more-click');
-    } else {
-        $('.expand_more').addClass('icon-more-click');
-    }
-});

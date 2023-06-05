@@ -19,4 +19,25 @@ let allMusic = [{
         img: "deritanama",
         src: "rima-huraisy"
     },
+    {
+        name: "Senandika",
+        artist: "Artwork Halunan",
+        album: "Single Track",
+        img: "senandika",
+        src: "senandika"
+    },
+    {
+        name: "Juwita",
+        artist: "Artwork Halunan",
+        album: "Single Track",
+        img: "juwita",
+        src: "juwita"
+    },
+    {
+        name: "Arogansi",
+        artist: "Artwork Halunan",
+        album: "Single Track",
+        img: "arogansi",
+        src: "arogansi"
+    },
 ];
