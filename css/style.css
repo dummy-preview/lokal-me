@@ -2060,7 +2060,7 @@ li.menu-item.current-menu-item {
 .sectiont-login {
     background: #F3F9FF;
     position: relative;
-    /* height: 80vh; */
+    height: 65vh;
 }
 
 .sectiont-login__title {
