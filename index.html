@@ -34,7 +34,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
+        <div class="header__wave">
+            <img src="img/wave-header.png" alt="">
+        </div>
+        <div class="header__bg">
+            <img src="img/bg-header.svg" alt="">
+        </div>
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
@@ -50,13 +56,35 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item"><a class="nav__link" href="#localmusic">LocalMusic</a></li>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                            <ul class="dropdown-nav">
+                                <li><a href="local-artist.html">LocalArtist</a></li>
+                                <li><a href="local-album.html">LocalAlbum</a></li>
+                                <li><a href="local-content.html">LocalContent</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
+                        </li>
                         <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="#event">Event</a></li>
                         <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="#localupdate">LocalMe Update</a></li>
-                        <li id="close5" class="menu-item current-menu-item">
-                            <a class="nav__link login" href="#pendaftaran">
-                                <img class="icon-user" src="img/icon/user.png" alt=""> User
+                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
+                            <a class="nav__link login" href="login.html">
+                                <img class="icon-user" src="img/icon/user.png" alt=""> Login
                             </a>
+                        </li> -->
+                        <li id="close6" class="menu-item current-menu-item sub-menu">
+                            <a class="nav__link login" href="login.html">
+                                <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
+                            </a>
+                            <ul class="dropdown-nav">
+                                <li><a href="">Log out</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -66,14 +94,8 @@
 
     <main class="main about page-section" id="beranda">
         <div class="sectiont1 pb">
-            <div class="wave1">
-                <img src="img/wave1.png" alt="">
-            </div>
-            <div class="sectiont1__obj1" data-scroll-speed="3">
-                <img src="img/s-o1.png" alt="">
-            </div>
-            <div class="sectiont1__obj2" data-scroll-speed="3">
-                <img src="img/s-o2.png" alt="">
+            <div class="seciont1__obj5" data-scroll-speed="3">
+                <img src="img/s-o0.png" alt="">
             </div>
             <div class="sectiont1__obj3" data-scroll-speed="5">
                 <img src="img/s-o3.png" alt="">
@@ -81,6 +103,7 @@
             <div class="sectiont1__obj4" data-scroll-speed="5">
                 <img src=" img/s-o4.png " alt=" ">
             </div>
+
             <div class="container">
                 <div class="sectiont1__content ">
                     <div class="sectiont1__content--item ">
@@ -544,23 +567,6 @@
             </div>
         </div>
     </footer>
-
-
-    <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false " tabindex="-1 " aria-labelledby="videoModalLabel " aria-hidden="true ">
-        <div class="modal-overlay modal-toggle "></div>
-        <div class="modal-wrapper modal-transition ">
-            <div class="modal-dialog ">
-                <div class="modal-content">
-                    <button class="modal-close modal-toggle">X</button>
-                    <div class="modal-body">
-                        <div class="ratio">
-                            <iframe src=" " allow="autoplay;" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

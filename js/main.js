@@ -23,6 +23,12 @@ $(document).ready(function() {
     $("#close4").click(function() {
         $("body.menu-active").removeClass("menu-active");
     });
+    $("#close5").click(function() {
+        $("body.menu-active").removeClass("menu-active");
+    });
+    $("#close6").click(function() {
+        $("body.menu-active").removeClass("menu-active");
+    });
 
 
     function toggleBodyClass(className) {

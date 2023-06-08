@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>CodePen Demo</title>
+
+    <meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/levit/pen/xpoXVw">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <style id="INLINE_PEN_STYLESHEET_ID">
+        body {
+            border-top: 0.4rem solid #38A169;
+            font-family: "Avenir next", Helvetica, sans-serif;
+        }
+        
+        .banner {
+            height: calc(100vh - .4rem);
+            background: linear-gradient(rgba(153, 230, 180, 0.8), rgba(153, 230, 180, 0.5)), url("https://images.unsplash.com/photo-1499856666482-0667da148d3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3819851436685b5c248b49f0efd10a2a&auto=format&fit=crop&w=2982&q=80") center/cover no-repeat;
+        }
+        
+        .hero--title {
+            text-align: center;
+            height: 84.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero--title h1 {
+            letter-spacing: -0.25rem;
+            color: #fff;
+            font-size: 6rem;
+            font-weight: 500;
+        }
+        
+        .navbar {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .navbar .icon {
+            fill: #38A169;
+        }
+        
+        .logo {
+            display: inline-block;
+            padding: 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        
+        a {
+            color: #38A169;
+        }
+        
+        .menu {
+            margin: 0;
+            display: flex;
+            list-style: none;
+        }
+        
+        .menu a {
+            position: relative;
+            z-index: 2;
+            display: block;
+            letter-spacing: 0.01rem;
+            padding: 1rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.25rem;
+            transition: 0.2s;
+        }
+        
+        .menu a:hover {
+            background: #38A169;
+            color: #fff;
+        }
+        
+        .menu a:hover .icon {
+            fill: #fff;
+        }
+        
+        .dropdown>a {
+            display: flex;
+            align-items: center;
+        }
+        
+        .dropdown>a .icon {
+            margin-left: 0.25em;
+        }
+        
+        .dropdown:hover .dropdown-nav {
+            opacity: 1;
+            transform: translateY(0);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .dropdown-nav {
+            opacity: 0;
+            transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1), opacity 0.3s ease-in-out;
+            transform: translateY(-4rem);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            background: rgba(225, 255, 225, 0.9);
+        }
+        
+        .dropdown-nav a {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header class="banner" role="banner">
+
+        <nav class="navbar" role="navigation" aria-label="menu">
+
+            <a class="logo" href="#"><strong>Bloom</strong> Landscaping</a>
+
+
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">
+                      Services
+                      <!--SVG dropdown icon-->
+                      <svg class="icon" width="14" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+                  </a>
+                    <!--Start of Dropdown-->
+                    <ul class="dropdown-nav">
+                        <li><a href="">Lawn Care</a></li>
+                        <li><a href="">Walling &amp; Fencing</a></li>
+                        <li><a href="">Landscape design</a></li>
+                        <li><a href="">Grounds Maintenance</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero--title">
+
+            <h1>Best in the business</h1>
+
+        </div>
+
+    </header>
+
+
+
+</body>
+
+</html>

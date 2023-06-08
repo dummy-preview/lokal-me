@@ -19,6 +19,12 @@
 
 <body>
     <header class="header">
+        <div class="header__wave">
+            <img src="img/wave-header.png" alt="">
+        </div>
+        <div class="header__bg">
+            <img src="img/bg-header.svg" alt="">
+        </div>
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
@@ -33,14 +39,36 @@
                                 <span class="hamburger-line hamburger-line-bottom"></span>
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
-                        <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="#beranda">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item"><a class="nav__link" href="#tentang">LocalMusic</a></li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="#kategori">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="mpv.html">LocalMe Update</a></li>
-                        <li id="close5" class="menu-item current-menu-item">
-                            <a class="nav__link login" href="#pendaftaran">
-                                <img class="icon-user" src="img/icon/user.png" alt=""> User
+                        <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                            <ul class="dropdown-nav">
+                                <li><a href="local-artist.html">LocalArtist</a></li>
+                                <li><a href="local-album.html">LocalAlbum</a></li>
+                                <li><a href="local-content.html">LocalContent</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
+                        </li>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="index.html#localupdate">LocalMe Update</a></li>
+                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
+                                    <a class="nav__link login" href="login.html">
+                                        <img class="icon-user" src="img/icon/user.png" alt=""> Login
+                                    </a>
+                                </li> -->
+                        <li id="close6" class="menu-item current-menu-item sub-menu">
+                            <a class="nav__link login" href="login.html">
+                                <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
                             </a>
+                            <ul class="dropdown-nav">
+                                <li><a href="">Log out</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -48,9 +76,6 @@
         </div>
     </header>
     <main class="main about" id="bg-localmusic">
-        <div class="obj-article">
-            <img src="img/wave-login.png" alt="">
-        </div>
         <div class="sectiont-cms pt pb">
             <div class="container">
                 <div class="sectiont-cms__content">
@@ -92,12 +117,12 @@
                             </div>
                             <div class="profile-wrap">
                                 <a href="">
-                                    <div class="profile-wrap--item regulasi">
+                                    <div class="profile-wrap--item regulasi modal-toggle">
                                         Aturan dan Regulasi
                                     </div>
                                 </a>
                                 <a href="">
-                                    <div class="profile-wrap--item regulasi">
+                                    <div class="profile-wrap--item regulasi modal-toggle">
                                         Kebijakan Data Pribadi
                                     </div>
                                 </a>
@@ -154,6 +179,42 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false " tabindex="-1 " aria-labelledby="videoModalLabel " aria-hidden="true ">
+        <div class="modal-overlay modal-toggle "></div>
+        <div class="modal-wrapper modal-transition ">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-title">
+                            Perjanjian Non-Disclosure Agreement ("NDA")
+                        </div>
+                        <div class="modal__content">
+                            <p>Perjanjian Non-Disclosure Agreement ("NDA")<br />Tanggal: [tanggal]</p>
+                            <p>Pihak yang terlibat:<br />[Penyanyi atau Grup Musik], ("Artis") dan [Pemilik Hak Cipta Lagu], ("Pemilik Hak Cipta").</p>
+                            <p>Tujuan:<br />Tujuan dari perjanjian ini adalah untuk menjaga kerahasiaan informasi dan melindungi hak cipta yang dimiliki oleh Pemilik Hak Cipta atas lagu yang ingin digunakan oleh Artis di platform musik streaming.</p>
+                            <p>Definisi:<br />a. "Informasi Rahasia" berarti informasi apapun, baik tertulis atau tidak tertulis, yang diberikan oleh Pemilik Hak Cipta kepada Artis sehubungan dengan lagu dan platform musik streaming, termasuk namun tidak
+                                terbatas pada informasi tentang hak cipta, royalti, dan detail teknis.</p>
+                            <p>b. "Lagu" berarti komposisi musik dan lirik, yang dilindungi oleh hak cipta dan dimiliki oleh Pemilik Hak Cipta.</p>
+                            <p>c. "Platform Musik Streaming" berarti platform musik digital yang dapat diakses secara online, di mana lagu dapat diputar dan didengarkan oleh pengguna.</p>
+                            <p>Kerahasiaan Informasi:<br />Artis dengan ini setuju dan berjanji untuk menjaga kerahasiaan informasi yang diberikan oleh Pemilik Hak Cipta, termasuk namun tidak terbatas pada hak cipta, royalti, dan detail teknis terkait dengan
+                                lagu dan platform musik streaming. Artis tidak akan mengungkapkan informasi tersebut kepada pihak ketiga tanpa izin tertulis dari Pemilik Hak Cipta.</p>
+                            <p>Penggunaan Lagu:<br />Artis hanya diperbolehkan menggunakan lagu di platform musik streaming sesuai dengan lisensi yang diberikan oleh Pemilik Hak Cipta. Artis tidak diperbolehkan untuk memodifikasi, merekayasa balik, atau
+                                melakukan tindakan lain yang dapat mengubah lagu tanpa izin tertulis dari Pemilik Hak Cipta.</p>
+                            <p>Kepemilikan Hak Cipta:<br />Artis mengakui dan setuju bahwa hak cipta atas lagu sepenuhnya dimiliki oleh Pemilik Hak Cipta. Artis tidak akan mengklaim kepemilikan atas lagu atau mengambil tindakan yang dapat merusak atau mempengaruhi
+                                hak cipta yang dimiliki oleh Pemilik Hak Cipta.</p>
+                            <p>Pelanggaran:<br />Artis mengakui dan setuju bahwa pelanggaran terhadap perjanjian ini dapat menyebabkan kerusakan yang tidak dapat diperbaiki pada Pemilik Hak Cipta. Dalam hal pelanggaran terjadi, Pemilik Hak Cipta berhak mengambil
+                                tindakan hukum yang diperlukan untuk melindungi hak cipta dan kepentingannya.</p>
+                            <p>Perjanjian ini diatur oleh hukum Negara [Negara] dan dianggap sebagai perjanjian yang sah dan mengikat kedua belah pihak setelah ditandatangani.<br />Demikian perjanjian ini dibuat dan ditandatangani oleh kedua belah pihak
+                                sebagai tanda persetujuan</p>
+                        </div>
+                        <div class="modal__cta modal-toggle">
+                            <img src="img/btn/setuju.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!--back to top-->

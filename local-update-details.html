@@ -19,6 +19,12 @@
 
 <body>
     <header class="header">
+        <div class="header__wave">
+            <img src="img/wave-header.png" alt="">
+        </div>
+        <div class="header__bg">
+            <img src="img/bg-header.svg" alt="">
+        </div>
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
@@ -33,14 +39,36 @@
                                 <span class="hamburger-line hamburger-line-bottom"></span>
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
-                        <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="#beranda">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item"><a class="nav__link" href="#tentang">LocalMusic</a></li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="#kategori">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="mpv.html">LocalMe Update</a></li>
-                        <li id="close5" class="menu-item current-menu-item">
-                            <a class="nav__link login" href="#pendaftaran">
-                                <img class="icon-user" src="img/icon/user.png" alt=""> User
+                        <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                            <ul class="dropdown-nav">
+                                <li><a href="local-artist.html">LocalArtist</a></li>
+                                <li><a href="local-album.html">LocalAlbum</a></li>
+                                <li><a href="local-content.html">LocalContent</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
+                        </li>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="index.html#localupdate">LocalMe Update</a></li>
+                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
+                                    <a class="nav__link login" href="login.html">
+                                        <img class="icon-user" src="img/icon/user.png" alt=""> Login
+                                    </a>
+                                </li> -->
+                        <li id="close6" class="menu-item current-menu-item sub-menu">
+                            <a class="nav__link login" href="login.html">
+                                <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
                             </a>
+                            <ul class="dropdown-nav">
+                                <li><a href="">Log out</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -48,9 +76,6 @@
         </div>
     </header>
     <main class="main about pb" id="bg-localupdate">
-        <div class="obj-article">
-            <img src="img/wave-localupdate.png" alt="">
-        </div>
         <div class="container read-margin">
             <div class="kategori__title">
                 LocalUpdate
