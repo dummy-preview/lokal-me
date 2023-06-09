@@ -2060,7 +2060,6 @@ li.menu-item.current-menu-item {
 .sectiont-login {
     background: #F3F9FF;
     position: relative;
-    height: 65vh;
 }
 
 .sectiont-login__title {
@@ -2086,6 +2085,7 @@ li.menu-item.current-menu-item {
 .sectiont-login__content {
     width: 500px;
     margin: 0px auto;
+    padding-bottom: 25vh;
 }
 
 .form-group label {
