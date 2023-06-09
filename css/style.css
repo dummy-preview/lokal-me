@@ -1403,6 +1403,14 @@ li.menu-item.current-menu-item {
     border-radius: 12px;
 }
 
+.list-l {
+    margin-left: -20px;
+}
+
+.list-r {
+    margin-left: 18px;
+}
+
 .top-menu {
     position: absolute;
     top: -5px;
@@ -2060,6 +2068,7 @@ li.menu-item.current-menu-item {
 .sectiont-login {
     background: #F3F9FF;
     position: relative;
+    /* height: 65vh; */
 }
 
 .sectiont-login__title {
@@ -2085,7 +2094,7 @@ li.menu-item.current-menu-item {
 .sectiont-login__content {
     width: 500px;
     margin: 0px auto;
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 
 .form-group label {
@@ -2482,7 +2491,6 @@ li.menu-item.current-menu-item {
 .sectiont-cms {
     background: #F3F9FF;
     position: relative;
-    /* z-index: 3; */
 }
 
 .sectiont-cms__content {
