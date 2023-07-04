@@ -7118,6 +7118,24 @@ p.copyright {
     height: 370px;
     overflow-y: scroll;
     background: #F5F5F5;
+    text-align: left;
+}
+
+.modal__content ol li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    color: #214868;
+    text-align: left;
+}
+
+ul.d li {
+    list-style-type: lower-alpha;
+}
+
+.modal__content ol ol li {
+    padding-left: 5px;
 }
 
 .modal__content p {
