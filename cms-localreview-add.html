@@ -13,8 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -52,7 +56,17 @@
                             </ul>
                         </li>
                         <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="index.html#localupdate">LocalMe Update</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                            <ul class="dropdown-nav">
+                                <li><a href="local-artist.html">LocalNews</a></li>
+                                <li><a href="local-album.html">LocalUpdate</a></li>
+                                <li><a href="local-content.html">LocalReview</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
+                        </li>
                         <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
                                             <a class="nav__link login" href="login.html">
                                                 <img class="icon-user" src="img/icon/user.png" alt=""> Login
@@ -128,15 +142,22 @@
                                     </div>
                                     <div class="form-item">
                                         <div class="form-group">
-                                            <div class="preview-input-review"></div>
+                                            <div class="preview-input-review">
+                                                <img src="img/preview-img.jpg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Kontent</label>
-                                    <form method="post">
+                                    <!-- <form method="post">
                                         <textarea id="mytextarea"></textarea>
-                                    </form>
+                                    </form> -->
+                                    <div id="content-editor">
+                                        <div id="summernote"></div>
+
+                                    </div>
+
                                 </div>
                                 <div class="btn-form btn-left">
                                     <button type="submit">
@@ -204,7 +225,9 @@
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+    <!-- <script type="text/javascript" src="js/tinymce.min.js" referrerpolicy="origin"></script> -->
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/jquery.h5validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
@@ -212,6 +235,17 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/main-home.js"></script>
+
+
+
+    <script>
+        $('#summernote').summernote({
+            placeholder: '',
+            tabsize: 1,
+            height: 410,
+            focus: true
+        });
+    </script>
 
 </body>
 

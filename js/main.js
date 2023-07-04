@@ -74,18 +74,18 @@ $(document).ready(function() {
     });
     // e backtotop
 
-    $("#Uploadfile").after("<span class='file_placeholder'>Tidak ada file yang dipilih</span>");
-    $('#Uploadfile').change(function() {
-        if ($("#Uploadfile").val().length > 0) {
-            $(".file_placeholder").empty();
-            $('#Uploadfile').removeClass('vendor_logo_hide').addClass('vendor_logo');
-            console.log($("#Uploadfile").val());
-        } else {
-            $('#Uploadfile').removeClass('vendor_logo').addClass('vendor_logo_hide');
-            $("#Uploadfile").after("<span class='file_placeholder'>Tidak ada file yang dipilih</span>");
-        }
+    // $("#Uploadfile").after("<span class='file_placeholder'>Tidak ada file</span>");
+    // $('#Uploadfile').change(function() {
+    //     if ($("#Uploadfile").val().length > 0) {
+    //         $(".file_placeholder").empty();
+    //         $('#Uploadfile').removeClass('vendor_logo_hide').addClass('vendor_logo');
+    //         console.log($("#Uploadfile").val());
+    //     } else {
+    //         $('#Uploadfile').removeClass('vendor_logo').addClass('vendor_logo_hide');
+    //         $("#Uploadfile").after("<span class='file_placeholder'>Tidak ada file</span>");
+    //     }
 
-    });
+    // });
     // add field
     var max_fields = 10;
     var wrapper = $(".input_fields_wrap");

@@ -52,7 +52,17 @@
                             </ul>
                         </li>
                         <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item"><a class="nav__link" href="index.html#localupdate">LocalMe Update</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                            <ul class="dropdown-nav">
+                                <li><a href="local-artist.html">LocalNews</a></li>
+                                <li><a href="local-album.html">LocalUpdate</a></li>
+                                <li><a href="local-content.html">LocalReview</a></li>
+                                <img class="top-menu" src="img/top-menu.png" alt="">
+                                <img class="bottom-menu" src="img/bottom-menu.png" alt="">
+                                <img class="left-menu" src="img/left-menu.png" alt="">
+                                <img class="right-menu" src="img/right-menu.png" alt="">
+                            </ul>
+                        </li>
                         <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
                                             <a class="nav__link login" href="login.html">
                                                 <img class="icon-user" src="img/icon/user.png" alt=""> Login
@@ -165,17 +175,11 @@
                                             <div class="form-item m-r4">
                                                 <div class="form-group">
                                                     <label for="opsi">Jenis Rilisan*</label>
-
-                                                    <select class="jenis-rilisan">
-                                                            <option value="1" >Album</option>
-                                                            <option value="2" >Singgle</option>
-                                                        </select>
-                                                    <!-- <div class="tt-select">
-                                                        <select>
-                                                            <option value="1" >Album</option>
-                                                            <option value="2" >Singgle</option>
-                                                        </select>
-                                                    </div> -->
+                                                    <select name="opsi" class="custom-select custom-block" tabindex="-1" id="select-store" required>
+                                                        <option value="" selected> Pilih Rilisan</option>
+                                                        <option value="1" >Album</option>
+                                                        <option value="2" >Singgle</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="name">Tahun Rilisan*</label>
@@ -200,6 +204,7 @@
                                                     <input type="file" class="vendor_logo_hide" name="v_logo" id='Uploadfile'><br>
                                                     <span class="note-upload">Ukuran foto 1:1 atau 500x500px, max 500kb</span><br>
                                                     <div class="preview-input">
+                                                        <img src="img/preview-img2.jpg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
