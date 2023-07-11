@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Details - Local Me | Tribunnews.com</title>
+    <title>Local Artis - Local Me | Tribunnews.com</title>
     <link rel="shortcut icon" href="img/favicon.jpg" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
         <div class="header__wave">
             <img src="img/wave-header.png" alt="">
         </div>
@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="./">
                         <img src="img/logo-localme.svg" alt="LOGO">
                     </a>
                 </div>
@@ -40,34 +40,28 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmusic">LocalMusic</a>
                             <ul class="dropdown-nav list-l">
-                                <li><a href="local-artist.html">LocalArtist</a></li>
-                                <li><a href="local-album.html">LocalAlbum</a></li>
-                                <li><a href="local-content.html">LocalContent</a></li>
+                                <li><a href="localme-artist.html">LocalME Artist</a></li>
+                                <li><a href="localme-album.html">LocalME Album</a></li>
+                                <li><a href="localme-talk.html">LocalME Talk</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="./#event">Local Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmeupdate">LocalMe Update</a>
                             <ul class="dropdown-nav">
-                                <li><a href="local-artist.html">LocalNews</a></li>
-                                <li><a href="local-album.html">LocalUpdate</a></li>
-                                <li><a href="local-content.html">LocalReview</a></li>
+                                <li><a href="localme-update.html">LocalME Update</a></li>
+                                <li><a href="localme-review.html">LocalME Review</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
-                                            <a class="nav__link login" href="login.html">
-                                                <img class="icon-user" src="img/icon/user.png" alt=""> Login
-                                            </a>
-                                        </li> -->
                         <li id="close6" class="menu-item current-menu-item sub-menu">
                             <a class="nav__link login" href="login.html">
                                 <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
@@ -86,37 +80,57 @@
         </div>
     </header>
     <main class="main about" id="bg-localmusic">
-        <div class="event pt pb">
+        <div class="local-music pt pb">
+            <div class="local-music__obj1">
+                <img src="img/wave-localalbum.png" alt="">
+            </div>
             <div class="container">
-                <div class="event__details">
-                    <div class="event__details--photo">
-                        <div class="sectiont5-mask">
-                            <img class="sectiont5bg-mask" src="img/bg-event.svg" alt=" ">
-                            <img class="sectiont5-target sectiont5-alpha" src="img/event1.png" alt="Masked image ">
+                <div class="sectiont-title c-localmusic">
+                    LocalArtist
+                </div>
+                <div class="local-music__wrap">
+                    <div class="local-music__item">
+                        <div class="localmusic-mask">
+                            <img class="localmusicbg-mask" src="img/contentbg-localmusic.svg" alt=" ">
+                            <img class="localmusic-target localmusic-alpha" src="img/content-localmusic.jpg" alt="Masked image ">
                         </div>
                     </div>
-                    <div class="event__details--text">
-                        <div class="event__details--title">
-                            Jurasik Fest
+                    <div class="local-music__text">
+                        <div class="localartis__info">
+                            <span>Artist :</span><span class="localartis-name">Lorjhu’</span>
                         </div>
-                        <div class="event__details--tanggal">
-                            5 Juni 2022
+                        <div class="localartis__info">
+                            <span>Asal :</span><span class="localartis-name">Madura, Jawa Timur</span>
                         </div>
-                        <div class="event__details--lokasi">
-                            ISI Yogyakarta
+                        <div class="localartis__info">
+                            <span>Genre :</span><span class="localartis-name">Alternatif</span>
                         </div>
-                        <div class="event__details--deskripsi">
-                            Mahasiswa Jurusan Musik ISI Yogyakarta mempersembahkan, JURASIK FEST 2022! Finally, the dreams come true Persiapkan dirimu untuk merasakan keseruan festival musik bersama Tulus , Kunto Aji , ISI Yogyakarta Orchestra, FSP Collective, dan belasan penampil
-                            lainnya! Gak cuma sampai di situ, bakal ada fun games, bazar dan food festival yang bakal nemenin kamu selama festival berlangsung. Tiket bisa kamu dapatkan di @yesplisofficial for more information, stay tune at @jurasikfest
+                        <div class="localartis__project">
+                            Lorjhu’ adalah projek solo dari musisi cum filmmaker asal Sumenep, Madura, Badrus Zeman. Di tengah kesibukan aktivitasnya sebagai animator, dan mengajar film di sebuah Institut Seni di Jakarta, Lorjhu’ tetap produktif untuk berkarya.
                         </div>
                         <div class="localartis__sosmed">
                             <p>Social Media :</p>
                             <div class="localartis__wrap">
                                 <a href="">
-                                    <img src="img/icon/s-web.png" alt="">
+                                    <img src="img/icon/s-fb.png" alt="">
                                 </a>
                                 <a href="">
                                     <img src="img/icon/s-ig.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/icon/s-tw.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/icon/s-tk.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/icon/s-yt.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/icon/s-sc.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/icon/s-sp.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -144,124 +158,70 @@
                         </a>
                     </div>
                 </div>
-                <div class="event__content">
-                    <div class="dikografi__title">
-                        Event Lainnya
+            </div>
+        </div>
+        <div class="diskografi pt pb">
+            <div class="container">
+                <div class="dikografi__title">
+                    Diskografi
+                </div>
+                <div class="diskografi__album">
+                    <div class="localalbum__item">
+                        <div class="localalbum-mask">
+                            <img class="localalbumbg-mask localalbumbg" src="img/localalbum-bg.png" alt=" ">
+                            <img class="localalbum-target localalbum-alpha" src="img/localalbum-2.jpg" alt="Masked image ">
+                        </div>
+                        <div class="titlesmall-localalbum">
+                            Rimpang
+                        </div>
+                        <div class="albumsmall-localalbum">
+                            Efek Rumah Kaca
+                        </div>
+                        <div class="tahunsmall-localalbum">
+                            2023
+                        </div>
                     </div>
-                    <div class="event__wrap">
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-1.jpg" alt="Masked image ">
+                </div>
+                <div class="diskografi__article">
+                    <div class="dikografi__title">
+                        Artikel Terkait
+                    </div>
+                    <div class="diskografi__wrap">
+                        <div class="diskografi__item">
+                            <div class="diskografi__item--photo">
+                                <div class="localmusic-mask">
+                                    <img class="localmusicbg-mask diskografibg" src="img/contentbg-localmusic.svg" alt=" ">
+                                    <img class="localmusic-target localmusic-alpha" src="img/content-localmusic.jpg" alt="Masked image ">
                                 </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="diskografi__date">5 November 2022</div>
+                            <div class="diskografi__title">
+                                Lorjhu’ Yang Menyuguhkan Musik Rasa Madura
+                            </div>
                         </div>
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-2.png" alt="Masked image ">
+                        <div class="diskografi__item">
+                            <div class="diskografi__item--photo">
+                                <div class="localmusic-mask">
+                                    <img class="localmusicbg-mask diskografibg" src="img/contentbg-localmusic.svg" alt=" ">
+                                    <img class="localmusic-target localmusic-alpha" src="img/content-localmusic.jpg" alt="Masked image ">
                                 </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="diskografi__date">5 November 2022</div>
+                            <div class="diskografi__title">
+                                Lorjhu, Indie Rock Asal Madura Lepas Album Debut Paseser
+                            </div>
                         </div>
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-3.jpg" alt="Masked image ">
+                        <div class="diskografi__item">
+                            <div class="diskografi__item--photo">
+                                <div class="localmusic-mask">
+                                    <img class="localmusicbg-mask diskografibg" src="img/contentbg-localmusic.svg" alt=" ">
+                                    <img class="localmusic-target localmusic-alpha" src="img/content-localmusic.jpg" alt="Masked image ">
                                 </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-4.jpg" alt="Masked image ">
-                                </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-5.jpg" alt="Masked image ">
-                                </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="event__item">
-                            <a href="event-detail.html">
-                                <div class="sectiont5-mask">
-                                    <img class="sectiont5bg-mask eventmask" src="img/bg-event.svg" alt=" ">
-                                    <img class="sectiont5-target sectiont5-alpha" src="img/e-6.jpg" alt="Masked image ">
-                                </div>
-                                <div class="event-text">
-                                    <div class="event-textsmall__title">
-                                        Jakarta Head in the Clouds
-                                    </div>
-                                    <div class="event-textsmall__tanggal">
-                                        3 - 4 Desember 2022
-                                    </div>
-                                    <div class="event-textsmall__lokasi">
-                                        Community Park PIK2, Jakarta
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="diskografi__date">5 November 2022</div>
+                            <div class="diskografi__title">
+                                Lorjhu’: Balada Kontemporer Dari Pulau Madura
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Me | Tribunnews.com</title>
+    <title>Local Review - Local Me | Tribunnews.com</title>
     <link rel="shortcut icon" href="img/favicon.jpg" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
         <div class="header__wave">
             <img src="img/wave-header.png" alt="">
         </div>
@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="./">
                         <img src="img/logo-localme.svg" alt="LOGO">
                     </a>
                 </div>
@@ -40,34 +40,28 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmusic">LocalMusic</a>
                             <ul class="dropdown-nav list-l">
-                                <li><a href="local-artist.html">LocalArtist</a></li>
-                                <li><a href="local-album.html">LocalAlbum</a></li>
-                                <li><a href="local-content.html">LocalContent</a></li>
+                                <li><a href="localme-artist.html">LocalME Artist</a></li>
+                                <li><a href="localme-album.html">LocalME Album</a></li>
+                                <li><a href="localme-talk.html">LocalME Talk</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="./#event">Local Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmeupdate">LocalMe Update</a>
                             <ul class="dropdown-nav">
-                                <li><a href="local-artist.html">LocalNews</a></li>
-                                <li><a href="local-album.html">LocalUpdate</a></li>
-                                <li><a href="local-content.html">LocalReview</a></li>
+                                <li><a href="localme-update.html">LocalME Update</a></li>
+                                <li><a href="localme-review.html">LocalME Review</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
-                                            <a class="nav__link login" href="login.html">
-                                                <img class="icon-user" src="img/icon/user.png" alt=""> Login
-                                            </a>
-                                        </li> -->
                         <li id="close6" class="menu-item current-menu-item sub-menu">
                             <a class="nav__link login" href="login.html">
                                 <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
@@ -88,32 +82,31 @@
     <main class="main about pb">
         <div class="container read-margin">
             <div class="kategori__title">
-                LocalNews
+                LocalReview
             </div>
             <div class="itemGrid article__item">
-                <div class="article__main read-main">
+                <div class="article__main localreview-main">
                     <div class="read__time">5 November 2022 </div>
-                    <h1 class="read__title">Adrian Adioetomo Tampil di Juke Joint Festival, Mississippi</h1>
+                    <h1 class="read__title">Girl and Her Bad Mood Rilis Videoklip 2013/Bluest Year I’ve Been</h1>
                     <div class="photo-gallery">
                         <div class="mvp-read__share">
                             <div class="mvp-read__share">
                                 Bagikan:
                             </div>
                             <div class="read__social__item">
-                                <a href=""><img src="img/icon/fb.png" alt=""></a>
+                                <a href=""><img src="img/icon/fb-l.svg" alt=""></a>
                             </div>
                             <div class="read__social__item">
-                                <a href=""><img src="img/icon/tw.png" alt=""></a>
+                                <a href=""><img src="img/icon/tw-l.svg" alt=""></a>
                             </div>
                             <div class="read__social__item">
-                                <a href=""><img src="img/icon/wa.png" alt=""></a>
+                                <a href=""><img src="img/icon/wa-l.svg" alt=""></a>
                             </div>
-
                         </div>
                         <div class="photo__wrap">
                             <div class="alpha-mask">
                                 <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/localnews.jpg" alt="Masked image ">
+                                <img class="target alpha-target" src="img/localreview-1.jpg" alt="Masked image ">
                             </div>
                         </div>
                         <div class="photo__caption">
@@ -204,106 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="article__side ">
-                    <div class="title left ">
-                        Terpopuler
-                    </div>
-                    <div class="article__list__wrap itemGrid ">
-                        <div class="article__list__asset2 ">
-                            <a href="read.html ">
 
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                    <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="artilce__list__text ">
-
-                            <div class="article__list__text--info ">
-                                <div class="tanggal tanggal-small">5 November 2022</div>
-                            </div>
-                            <a href="read.html ">
-                                <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="article__list__wrap itemGrid ">
-                        <div class="article__list__asset2 ">
-                            <a href="read.html ">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                    <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="artilce__list__text ">
-
-                            <div class="article__list__text--info ">
-                                <div class="tanggal tanggal-small">5 November 2022</div>
-                            </div>
-                            <a href="read.html ">
-                                <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="article__list__wrap itemGrid ">
-                        <div class="article__list__asset2 ">
-                            <a href="read.html ">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                    <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="artilce__list__text ">
-
-                            <div class="article__list__text--info ">
-                                <div class="tanggal tanggal-small">5 November 2022</div>
-                            </div>
-                            <a href="read.html ">
-                                <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="article__list__wrap itemGrid ">
-                        <div class="article__list__asset2 ">
-                            <a href="read.html ">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                    <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="artilce__list__text ">
-
-                            <div class="article__list__text--info ">
-                                <div class="tanggal tanggal-small">5 November 2022</div>
-                            </div>
-                            <a href="read.html ">
-                                <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="article__list__wrap itemGrid ">
-                        <div class="article__list__asset2 ">
-                            <a href="read.html ">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                    <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="artilce__list__text ">
-                            <div class="article__list__text--info ">
-                                <div class="tanggal tanggal-small">5 November 2022</div>
-                            </div>
-                            <a href="read.html ">
-                                <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="more__article">
                 <div class="more__title">
@@ -442,6 +336,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!--back to top-->
     <div class="m-backtotop" aria-hidden="true">

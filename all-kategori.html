@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/simplePagination.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
         <div class="header__wave">
             <img src="img/wave-header.png" alt="">
         </div>
@@ -28,7 +29,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="./">
                         <img src="img/logo-localme.svg" alt="LOGO">
                     </a>
                 </div>
@@ -40,34 +41,28 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmusic">LocalMusic</a>
                             <ul class="dropdown-nav list-l">
-                                <li><a href="local-artist.html">LocalArtist</a></li>
-                                <li><a href="local-album.html">LocalAlbum</a></li>
-                                <li><a href="local-content.html">LocalContent</a></li>
+                                <li><a href="localme-artist.html">LocalME Artist</a></li>
+                                <li><a href="localme-album.html">LocalME Album</a></li>
+                                <li><a href="localme-talk.html">LocalME Talk</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="./#event">Local Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmeupdate">LocalMe Update</a>
                             <ul class="dropdown-nav">
-                                <li><a href="local-artist.html">LocalNews</a></li>
-                                <li><a href="local-album.html">LocalUpdate</a></li>
-                                <li><a href="local-content.html">LocalReview</a></li>
+                                <li><a href="localme-update.html">LocalME Update</a></li>
+                                <li><a href="localme-review.html">LocalME Review</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
-                                    <a class="nav__link login" href="login.html">
-                                        <img class="icon-user" src="img/icon/user.png" alt=""> Login
-                                    </a>
-                                </li> -->
                         <li id="close6" class="menu-item current-menu-item sub-menu">
                             <a class="nav__link login" href="login.html">
                                 <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
@@ -86,73 +81,14 @@
         </div>
     </header>
     <main class="main about">
-        <div class="local-music pt pb">
-            <div class="local-music__obj1">
-                <img src="img/wave-localupdate.png" alt="">
-            </div>
+        <div class="local-content pt pb">
             <div class="container">
-                <div class="sectiont-title c-localmusic mb-title">
-                    LocalNews
+                <div class="sectiont-title c-localmusic">
+                    LocalME Update
                 </div>
-                <div class="news__wrap">
-                    <div class="news__item">
-                        <div class="article__list__asset ">
-                            <a href="local-news-details.html">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask bg-masklocalnews" src="img/bg-images.svg" alt=" ">
-                                    <img class="target alpha-target" src="img/localnews.jpg" alt="Masked image ">
-                                </div>
-                            </a>
-                            <div class="article__list__bg1">
-                                <div class="tanggal tanggal-big">5 November 2022</div>
-                                <a href="local-news-details.html">
-                                    <h1 class="article__list__title article__list__titlebig">
-                                        Milledenials Rilis Dua Single Menuju Album Mini Terbaru
-                                    </h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news__item">
-                        <div class="article__list__asset">
-                            <a href="local-news-details.html">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                    <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                                </div>
-                            </a>
-                            <div class="article__list__bg2">
-                                <div class="tanggal ">5 November 2022</div>
-                                <a href="local-news-details.html">
-                                    <h1 class="article__list__title title-k">
-                                        Milledenials Rilis Dua Single Menuju Album Mini Terbaru
-                                    </h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news__item">
-                        <div class="article__list__asset">
-                            <a href="local-news-details.html">
-                                <div class="alpha-mask">
-                                    <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                    <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                                </div>
-                            </a>
-                            <div class="article__list__bg2">
-                                <div class="tanggal ">5 November 2022</div>
-                                <a href="local-news-details.html">
-                                    <h1 class="article__list__title title-k">
-                                        Milledenials Rilis Dua Single Menuju Album Mini Terbaru
-                                    </h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="itemGrid article__item">
-                    <div class="article__main">
-                        <div class="title left">
+                <div class="itemGrid article__item pt ">
+                    <div class="article__main ">
+                        <div class="title left ">
                             Terbaru
                         </div>
                         <div class="article__wrap" id="content">
@@ -165,6 +101,9 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="topik ">
+                                    <a href="local-update.html"><img src="img/btn/localupdate.svg" alt=" "></a>
+                                </div>
                                 <div class="tanggal ">5 November 2022</div>
                                 <a href="local-news-details.html">
                                     <h1 class="article__list__title ">
@@ -174,15 +113,19 @@
                             </div>
                             <div class="article__list card">
                                 <div class="article__list__asset ">
-                                    <a href="local-news-details.html">
+                                    <a href="local-update-details.html">
                                         <div class="alpha-mask ">
                                             <img class="bg-mask " src="img/bg-images.svg " alt=" ">
                                             <img class="target alpha-target " src="img/image-artikel.jpg " alt="Masked image ">
                                         </div>
+
                                     </a>
                                 </div>
+                                <div class="topik ">
+                                    <a href="local-update.html"><img src="img/btn/localupdate.svg" alt=" "></a>
+                                </div>
                                 <div class="tanggal ">5 November 2022</div>
-                                <a href="local-news-details.html">
+                                <a href="local-update-details.html">
                                     <h1 class="article__list__title ">
                                         Kid Vicious Bicara Keberengsekan Hidup di Album Perdana
                                     </h1>
@@ -192,10 +135,13 @@
                                 <div class="article__list__asset ">
                                     <a href="local-news-details.html">
                                         <div class="alpha-mask ">
-                                            <img class="bg-mask " src="img/bg-images.svg " alt=" ">
+                                            <img class="bg-mask " src="img/bg-images.svg" alt=" ">
                                             <img class="target alpha-target " src="img/image-artikel.jpg " alt="Masked image ">
                                         </div>
                                     </a>
+                                </div>
+                                <div class="topik">
+                                    <a href="local-review.html"><img src="img/btn/localreview.svg" alt=" "></a>
                                 </div>
                                 <div class="tanggal ">5 November 2022</div>
                                 <a href="local-news-details.html">
@@ -206,28 +152,64 @@
                             </div>
                             <div class="article__list card">
                                 <div class="article__list__asset ">
-                                    <a href="local-news-details.html">
+                                    <a href="local-review-details.html">
                                         <div class="alpha-mask ">
                                             <img class="bg-mask " src="img/bg-images.svg " alt=" ">
                                             <img class="target alpha-target " src="img/image-artikel.jpg " alt="Masked image ">
                                         </div>
                                     </a>
                                 </div>
+                                <div class="topik">
+                                    <a href="local-review.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
+                                <div class="tanggal">5 November 2022</div>
+                                <a href="local-review-details.html">
+                                    <h1 class="article__list__title ">
+                                        ZIO Lanjutkan Kiprah Solo dengan Single Selalu Ada
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="article__list card">
+                                <div class="article__list__asset ">
+                                    <a href="local-news-details.html">
+                                        <div class="alpha-mask ">
+                                            <img class="bg-mask " src="img/bg-images.svg" alt=" ">
+                                            <img class="target alpha-target " src="img/image-artikel.jpg " alt="Masked image ">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topik">
+                                    <a href="local-review.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
                                 <div class="tanggal ">5 November 2022</div>
                                 <a href="local-news-details.html">
+                                    <h1 class="article__list__title ">
+                                        Misanthropy Club Lanjutkan Tren Produktif dengan Double Single
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="article__list card">
+                                <div class="article__list__asset ">
+                                    <a href="local-review-details.html">
+                                        <div class="alpha-mask ">
+                                            <img class="bg-mask " src="img/bg-images.svg " alt=" ">
+                                            <img class="target alpha-target " src="img/image-artikel.jpg " alt="Masked image ">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topik">
+                                    <a href="local-review.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
+                                <div class="tanggal">5 November 2022</div>
+                                <a href="local-review-details.html">
                                     <h1 class="article__list__title ">
                                         ZIO Lanjutkan Kiprah Solo dengan Single Selalu Ada
                                     </h1>
                                 </a>
                             </div>
                         </div>
-                        <div class="btn__more more-pb">
-                            <a href="local-news.html">
-                                <img src="img/btn-selengkapnya.png" alt="">
-                            </a>
-                        </div>
                     </div>
-                    <div class="article__side ">
+                    <div class="article__side">
                         <div class="title left ">
                             Terpopuler
                         </div>
@@ -236,11 +218,14 @@
                                 <a href="local-news-details.html">
                                     <div class="alpha-mask">
                                         <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
+                                        <img class="target alpha-target alpha-small" src="img/700x393.jpg " alt="Masked image ">
                                     </div>
                                 </a>
                             </div>
                             <div class="artilce__list__text ">
+                                <div class="topik topik-small">
+                                    <a href="local-review-details.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
                                 <div class="article__list__text--info ">
                                     <div class="tanggal tanggal-small">5 November 2022</div>
                                 </div>
@@ -251,26 +236,7 @@
                         </div>
                         <div class="article__list__wrap itemGrid ">
                             <div class="article__list__asset2 ">
-                                <a href="local-news-details.html">
-                                    <div class="alpha-mask">
-                                        <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="artilce__list__text ">
-
-                                <div class="article__list__text--info ">
-                                    <div class="tanggal tanggal-small">5 November 2022</div>
-                                </div>
-                                <a href="local-news-details.html">
-                                    <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article__list__wrap itemGrid ">
-                            <div class="article__list__asset2 ">
-                                <a href="local-news-details.html">
+                                <a href="local-review-details.html">
                                     <div class="alpha-mask">
                                         <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
                                         <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
@@ -278,156 +244,13 @@
                                 </a>
                             </div>
                             <div class="artilce__list__text ">
-
+                                <div class="topik topik-small">
+                                    <a href="local-review-details.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
                                 <div class="article__list__text--info ">
                                     <div class="tanggal tanggal-small">5 November 2022</div>
                                 </div>
-                                <a href="local-news-details.html">
-                                    <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article__list__wrap itemGrid ">
-                            <div class="article__list__asset2 ">
-                                <a href="local-news-details.html">
-                                    <div class="alpha-mask">
-                                        <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="artilce__list__text ">
-
-                                <div class="article__list__text--info ">
-                                    <div class="tanggal tanggal-small">5 November 2022</div>
-                                </div>
-                                <a href="local-news-details.html">
-                                    <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article__list__wrap itemGrid ">
-                            <div class="article__list__asset2 ">
-                                <a href="local-news-details.html">
-                                    <div class="alpha-mask">
-                                        <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="artilce__list__text ">
-                                <div class="article__list__text--info ">
-                                    <div class="tanggal tanggal-small">5 November 2022</div>
-                                </div>
-                                <a href="local-news-details.html">
-                                    <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="local-album pt pb" id="bg-localupdate">
-            <div class="local-album__obj1">
-                <img src="img/obj-article.png" alt="">
-            </div>
-            <div class="sectiont-title c-localmusic">
-                LocalUpdate
-            </div>
-            <div class="container">
-                <div class="itemGrid article__item">
-                    <div class="article__main">
-                        <div class="title left">
-                            Terbaru
-                        </div>
-                        <div class="article__wrap" id="content">
-                            <div class="local-update__item card3">
-                                <a href="local-update-details.html">
-                                    <div class="local-content__item--photo">
-                                        <div class="localcontent-mask">
-                                            <img class="localcontentbg-mask" src="img/bg-images.svg " alt=" ">
-                                            <img class="localcontent-target localcontent-alpha" src="img/local-content-3.jpg" alt="Masked image ">
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="local-update__item--text">
-                                    <div class="tanggal ">5 November 2022</div>
-                                    <a href="local-update-details.html">
-                                        <h1 class="article__list__title ">
-                                            Rimpang, Album Baru Efek Rumah Kaca Rilis 27 Januari
-                                        </h1>
-                                        <p class="article__list__description">
-                                            Efek Rumah Kaca akan merilis album keempat, bertajuk Rimpang, yang dirilis pada 27 Januari mendatang.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="local-update__item card3">
-                                <a href="local-update-details.html">
-                                    <div class="local-content__item--photo">
-                                        <div class="localcontent-mask">
-                                            <img class="localcontentbg-mask" src="img/bg-images.svg " alt=" ">
-                                            <img class="localcontent-target localcontent-alpha" src="img/local-content-3.jpg" alt="Masked image ">
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="local-update__item--text">
-                                    <div class="tanggal ">5 November 2022</div>
-                                    <a href="local-update-details.html">
-                                        <h1 class="article__list__title ">
-                                            Sebelum Konser Tunggal, MALIQ & D’Essentials Bikin Halalbihalal
-                                        </h1>
-                                        <p class="article__list__description">
-                                            Setiap tahunnya momen buka bersama semacam ini selalu dinanti oleh D’Essentials.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="btn__more more-pb">
-                                <a href="local-update.html">
-                                    <img src="img/btn-selengkapnya.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article__side ">
-                        <div class="title left ">
-                            Terpopuler
-                        </div>
-                        <div class="article__list__wrap itemGrid ">
-                            <div class="article__list__asset2 ">
-                                <a href="local-update-details.html">
-                                    <div class="alpha-mask">
-                                        <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="artilce__list__text ">
-                                <div class="article__list__text--info ">
-                                    <div class="tanggal tanggal-small">5 November 2022</div>
-                                </div>
-                                <a href="local-update-details.html">
-                                    <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article__list__wrap itemGrid ">
-                            <div class="article__list__asset2 ">
-                                <a href="local-update-details.html">
-                                    <div class="alpha-mask">
-                                        <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
-                                        <img class="target alpha-target alpha-small" src="img/localnews.jpg " alt="Masked image ">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="artilce__list__text ">
-
-                                <div class="article__list__text--info ">
-                                    <div class="tanggal tanggal-small">5 November 2022</div>
-                                </div>
-                                <a href="local-update-details.html">
+                                <a href="local-review-details.html">
                                     <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
                                 </a>
                             </div>
@@ -442,7 +265,9 @@
                                 </a>
                             </div>
                             <div class="artilce__list__text ">
-
+                                <div class="topik topik-small">
+                                    <a href="local-update-details.html"><img src="img/btn/localupdate.svg" alt=" "></a>
+                                </div>
                                 <div class="article__list__text--info ">
                                     <div class="tanggal tanggal-small">5 November 2022</div>
                                 </div>
@@ -453,7 +278,7 @@
                         </div>
                         <div class="article__list__wrap itemGrid ">
                             <div class="article__list__asset2 ">
-                                <a href="local-album-details.html">
+                                <a href="local-news-details.html">
                                     <div class="alpha-mask">
                                         <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
                                         <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
@@ -461,18 +286,20 @@
                                 </a>
                             </div>
                             <div class="artilce__list__text ">
-
+                                <div class="topik topik-small">
+                                    <a href="local-review-details.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
                                 <div class="article__list__text--info ">
                                     <div class="tanggal tanggal-small">5 November 2022</div>
                                 </div>
-                                <a href="local-update-details.html">
+                                <a href="local-news-details.html">
                                     <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
                                 </a>
                             </div>
                         </div>
                         <div class="article__list__wrap itemGrid ">
                             <div class="article__list__asset2 ">
-                                <a href="local-update-details.html">
+                                <a href="local-review-details.html">
                                     <div class="alpha-mask">
                                         <img class="bg-mask bg-mask-small" src="img/bg-images.svg " alt=" ">
                                         <img class="target alpha-target alpha-small" src="img/image-artikel.jpg " alt="Masked image ">
@@ -480,171 +307,25 @@
                                 </a>
                             </div>
                             <div class="artilce__list__text ">
+                                <div class="topik topik-small">
+                                    <a href="local-review-details.html"><img src="img/btn/localreview.svg" alt=" "></a>
+                                </div>
                                 <div class="article__list__text--info ">
                                     <div class="tanggal tanggal-small">5 November 2022</div>
                                 </div>
-                                <a href="local-update-details.html">
+                                <a href="local-review-details.html">
                                     <h1 class="artilce__list__text--title ">Nosstress Rilis Album Baru yang Personal</h1>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="local-content pt pb">
-            <div class="local-music__obj1">
-                <img src="img/wave-localupdate.png" alt="">
-            </div>
-            <div class="container">
-                <div class="sectiont-title c-localmusic">
-                    LocalReview
-                </div>
-                <div class="local-review__wrap">
-                    <div class="local-review__photo">
-                        <div class="localcontent-mask">
-                            <img class="localcontentbg-mask" src="img/bg-images.svg " alt=" ">
-                            <img class="localcontent-target localcontent-alpha" src="img/img-local-review.jpg" alt="Masked image ">
-                        </div>
-                    </div>
-                    <div class="local-review__text">
-                        <div class="local-review__text--tanggal">
-                            25 November 2022
-                        </div>
-                        <div class="local-review__text--title">
-                            Rich Brian & Chung Ha: These Nights Review
-                        </div>
-                        <div class="local-review__text--description">
-                            Akhir September lalu, kita dikejutkan dengan teaser kolaborasi dari Rich Brain dan Chung Ha dengan single terbaru bertajuk “These Nights”. Single ini telah resmi rilis pada 3 Oktober lalu. Karya kolaborasi ini merupakan salah satu single promosi untuk
-                            album “Head in the Clouds II” yang akan rilis ...
-                        </div>
-                    </div>
-                </div>
-                <div class="local-review__content">
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="local-review__item">
-                        <a href="local-review-details.html">
-                            <div class="alpha-mask">
-                                <img class="bg-mask" src="img/bg-images.svg" alt=" ">
-                                <img class="target alpha-target" src="img/700x393.jpg" alt="Masked image ">
-                            </div>
-                            <div class="local-review__item--info">
-                                <span class="local-review__item--tanggal">25 November 2022</span>
-                                <h1 class="local-review__item--title">VVYND: Orbit Single Review</h1>
-                                <p class="local-review__item--description">Kembali ke orbit setelah hiatus cukup lama, VVYND hidden gem R&B lokal yang patut masuk ...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="btn__more more-pb">
-                    <a href="local-review.html">
-                        <img src="img/btn-selengkapnya.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="local-review pt pb">
-            <div class="container">
-                <div class="review__title">
-                    Ikuti Review<br> Kompetisi Musik!
-                </div>
-                <div class="review__text">
-                    Dengarkan karya musisi Indonesia dan<br> berikan pendapatmu
-                </div>
-                <div class="review__btn">
-                    <a href="local-music.html">
-                        <img class="caritahu" src="img/btn-caritahu.svg" alt="">
-                    </a>
+                <div class="pagination-vip custom-theme simple-pagination">
+                    <ul>
+                        <li class="disabled"><span class="current prev">Prev</span></li>
+                        <li class="active"><span class="current">1</span></li>
+                        <li><a href="#page-2" class="page-link next">Next</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

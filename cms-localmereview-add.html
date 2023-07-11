@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS Event - LocalMe | Tribunnews.com</title>
+    <title>CMS LocalReview - LocalMe | Tribunnews.com</title>
     <link rel="shortcut icon" href="img/favicon.jpg" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
         <div class="header__wave">
             <img src="img/wave-header.png" alt="">
         </div>
@@ -28,7 +32,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="./">
                         <img src="img/logo-localme.svg" alt="LOGO">
                     </a>
                 </div>
@@ -40,34 +44,28 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmusic">LocalMusic</a>
                             <ul class="dropdown-nav list-l">
-                                <li><a href="local-artist.html">LocalArtist</a></li>
-                                <li><a href="local-album.html">LocalAlbum</a></li>
-                                <li><a href="local-content.html">LocalContent</a></li>
+                                <li><a href="localme-artist.html">LocalME Artist</a></li>
+                                <li><a href="localme-album.html">LocalME Album</a></li>
+                                <li><a href="localme-talk.html">LocalME Talk</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="./#event">Local Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmeupdate">LocalMe Update</a>
                             <ul class="dropdown-nav">
-                                <li><a href="local-artist.html">LocalNews</a></li>
-                                <li><a href="local-album.html">LocalUpdate</a></li>
-                                <li><a href="local-content.html">LocalReview</a></li>
+                                <li><a href="localme-update.html">LocalME Update</a></li>
+                                <li><a href="localme-review.html">LocalME Review</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
-                                            <a class="nav__link login" href="login.html">
-                                                <img class="icon-user" src="img/icon/user.png" alt=""> Login
-                                            </a>
-                                        </li> -->
                         <li id="close6" class="menu-item current-menu-item sub-menu">
                             <a class="nav__link login" href="login.html">
                                 <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
@@ -91,67 +89,84 @@
                 <div class="sectiont-cms__content">
                     <div class="cms__side">
                         <a href="">
-                            <div class="cms__side--menu">Beranda</div>
+                            <div class="cms__side--menu active-cms">Beranda</div>
                         </a>
                         <a href="">
                             <div class="cms__side--menu">LocalMusic</div>
                         </a>
                         <a href="">
-                            <div class="cms__side--menu">LocalReview</div>
+                            <div class="cms__side--menu">LocalME Review</div>
                         </a>
                         <a href="">
-                            <div class="cms__side--menu active-cms">LocalEvent</div>
+                            <div class="cms__side--menu">LocalME Event</div>
                         </a>
                     </div>
                     <div class="cms__main">
                         <div class="cms__main--titlelocalmusic">
-                            LocalEvent
+                            LocalME Review
                         </div>
                         <div class="cms__main--table">
-                            <div class="table__wrap">
-                                <div class="table__title">
-                                    Daftar Acara
+                            <form role="form" data-h5-instanceid="0" novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="name">Judul</label>
+                                    <input type="text" class="form-control" id="email" name="email" required>
                                 </div>
-                                <div class="table__addlocalmusic">
-                                    <a href="">
-                                        <img src="img/btn/add-lokalevent.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <table>
-                                <tr>
-                                    <th class="t1">No</th>
-                                    <th class="t7">Nama Acara</th>
-                                    <th class="t4">Waktu</th>
-                                    <th class="t5">Aksi</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Jakarta Head in the Clouds</td>
-                                    <td>Akan Datang</td>
-                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Bergembira Bersama Music Festival</td>
-                                    <td>Sedang Berlangsung</td>
-                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Blues Music Festival 2022</td>
-                                    <td>Telah Berakhir</td>
-                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
-                                </tr>
+                                <div class="form__wrap">
+                                    <div class="form-item m-r4">
+                                        <div class="form-group">
+                                            <label for="name">Foto Article</label><br>
+                                            <input type="file" class="vendor_logo_hide" name="v_logo" id='Uploadfile'><br>
+                                            <span class="note-upload">Max file size 500kb</span>
 
-                            </table>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Teaser</label>
+                                            <input type="text" class="form-control" id="email" name="email" required>
+                                            <span class="note-upload">Contoh: Lorem Ipsum Dolor Sit Amet</span><br>
+                                            <!-- <span class="note-upload">Contoh: Lorem Ipsum Dolor Sit Amet</span> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Tag</label>
+                                            <ul class="tags-input">
+                                                <li class="tags-new">
+                                                    <input type="text" fdprocessedid="81c6" placeholder="Masukan Tag dengan koma (,)">
+                                                </li>
+                                            </ul>
+                                            <span class="note-upload">Contoh: Lorem, Ipsum Dolor, Sit Amet</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-group">
+                                            <div class="preview-input-review">
+                                                <img src="img/preview-img.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Kontent</label>
+                                    <!-- <form method="post">
+                                        <textarea id="mytextarea"></textarea>
+                                    </form> -->
+                                    <div id="content-editor">
+                                        <div id="summernote"></div>
+
+                                    </div>
+
+                                </div>
+                                <div class="btn-form btn-left">
+                                    <button type="submit">
+                                        <img src="img/btn/publish.svg" alt="">
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -196,8 +211,17 @@
 
 
 
+    <!--back to top-->
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow-back">
+            <img src="img/top.png" alt="top.png">
+        </div>
+    </div>
+
+
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/jquery.h5validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
@@ -205,6 +229,17 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/main-home.js"></script>
+
+
+
+    <script>
+        $('#summernote').summernote({
+            placeholder: '',
+            tabsize: 1,
+            height: 410,
+            focus: true
+        });
+    </script>
 
 </body>
 

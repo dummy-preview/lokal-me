@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="bg-header">
         <div class="header__wave">
             <img src="img/wave-header.png" alt="">
         </div>
@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="./">
                         <img src="img/logo-localme.svg" alt="LOGO">
                     </a>
                 </div>
@@ -40,34 +40,28 @@
                               </button>
                     <ul id="primary-menu" class="menu nav-menu">
                         <li id="close1" class="menu-item current-menu-item"><a class="nav__link" href="./">Home</a></li>
-                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="">LocalMusic</a>
+                        <li id="close2" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmusic">LocalMusic</a>
                             <ul class="dropdown-nav list-l">
-                                <li><a href="local-artist.html">LocalArtist</a></li>
-                                <li><a href="local-album.html">LocalAlbum</a></li>
-                                <li><a href="local-content.html">LocalContent</a></li>
+                                <li><a href="localme-artist.html">LocalME Artist</a></li>
+                                <li><a href="localme-album.html">LocalME Album</a></li>
+                                <li><a href="localme-talk.html">LocalME Talk</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="index.html#event">Event</a></li>
-                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="index.html#localmeupdate">LocalMe Update</a>
+                        <li id="close3" class="menu-item current-menu-item"><a class="nav__link" href="./#event">Local Event</a></li>
+                        <li id="close4" class="menu-item current-menu-item sub-menu"><a class="nav__link" href="./#localmeupdate">LocalMe Update</a>
                             <ul class="dropdown-nav">
-                                <li><a href="local-artist.html">LocalNews</a></li>
-                                <li><a href="local-album.html">LocalUpdate</a></li>
-                                <li><a href="local-content.html">LocalReview</a></li>
+                                <li><a href="localme-update.html">LocalME Update</a></li>
+                                <li><a href="localme-review.html">LocalME Review</a></li>
                                 <img class="top-menu" src="img/top-menu.png" alt="">
                                 <img class="bottom-menu" src="img/bottom-menu.png" alt="">
                                 <img class="left-menu" src="img/left-menu.png" alt="">
                                 <img class="right-menu" src="img/right-menu.png" alt="">
                             </ul>
                         </li>
-                        <!-- <li id="close5" class="menu-item current-menu-item sub-menu">
-                                            <a class="nav__link login" href="login.html">
-                                                <img class="icon-user" src="img/icon/user.png" alt=""> Login
-                                            </a>
-                                        </li> -->
                         <li id="close6" class="menu-item current-menu-item sub-menu">
                             <a class="nav__link login" href="login.html">
                                 <img class="icon-user" src="img/icon/user.png" alt=""> Mamet
@@ -91,16 +85,16 @@
                 <div class="sectiont-cms__content">
                     <div class="cms__side">
                         <a href="">
-                            <div class="cms__side--menu ">Beranda</div>
+                            <div class="cms__side--menu active-cms">Beranda</div>
                         </a>
                         <a href="">
                             <div class="cms__side--menu">LocalMusic</div>
                         </a>
                         <a href="">
-                            <div class="cms__side--menu">LocalReview</div>
+                            <div class="cms__side--menu">LocalME Review</div>
                         </a>
                         <a href="">
-                            <div class="cms__side--menu active-cms">LocalEvent</div>
+                            <div class="cms__side--menu">LocalME Event</div>
                         </a>
                     </div>
                     <div class="cms__main">
@@ -108,73 +102,48 @@
                             LocalEvent
                         </div>
                         <div class="cms__main--table">
-                            <!-- <div class="table__wrap">
+                            <div class="table__wrap">
                                 <div class="table__title">
-                                    Artist
+                                    Daftar Acara
                                 </div>
-                            </div> -->
-
-                            <form role="form" data-h5-instanceid="0" novalidate="novalidate">
-                                <div class="form__wrap line-wrap">
-                                    <div class="form-item m-r4">
-                                        <div class="form-group">
-                                            <label for="name">Nama Acara*</label>
-                                            <input type="text" class="form-control" id="email" name="email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Deskripsi Acara*</label>
-                                            <textarea type="text" class="form-control" id="email" name="email" required></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="opsi">Durasi Acara</label>
-                                            <select name="opsi" class="custom-select custom-block" tabindex="-1" id="select-store" required>
-                                                <option value="" selected> Pilih Durasi Acara</option>
-                                                <option value="1">1 Hari</option>
-                                                <option value="2">2 Hari</option>
-                                                <option value="3">3 Hari</option>
-                                                <option value="4">4 Hari</option>
-                                                <option value="5">5 Hari</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="name">Day 1</label>
-                                            <input type="date" class="form-control" id="email" name="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-item">
-                                        <div class="form-group">
-                                            <label for="name">Upload Cover</label><br>
-                                            <input type="file" class="vendor_logo_hide" name="v_logo" id='Uploadfile'><br>
-                                            <span class="note-upload">Ukuran poster, max 500kb</span><br>
-                                            <div class="preview-input-poster">
-                                                <img src="img/preview-img3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Website</label>
-                                            <input type="text" class="form-control" id="email" name="email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Instagram</label>
-                                            <input type="text" class="form-control" id="email" name="email" required>
-                                        </div>
-                                    </div>
+                                <div class="table__addlocalmusic">
+                                    <a href="">
+                                        <img src="img/btn/add-lokalevent.svg" alt="">
+                                    </a>
                                 </div>
+                            </div>
+                            <table>
+                                <tr>
+                                    <th class="t1">No</th>
+                                    <th class="t7">Nama Acara</th>
+                                    <th class="t4">Waktu</th>
+                                    <th class="t5">Aksi</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jakarta Head in the Clouds</td>
+                                    <td>Akan Datang</td>
+                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Bergembira Bersama Music Festival</td>
+                                    <td>Sedang Berlangsung</td>
+                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Blues Music Festival 2022</td>
+                                    <td>Telah Berakhir</td>
+                                    <td><button class="table-edit"><img src="img/btn/pencil.svg" alt=""></button><button class="table-delete"><img src="img/btn/delete.svg" alt=""></button></td>
+                                </tr>
 
-                                <div class="btn-form btn-left">
-                                    <button type="submit">
-                                        <img src="img/btn/publish.svg" alt="">
-                                    </button>
-                                </div>
-                            </form>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
 
 
@@ -218,15 +187,6 @@
             </div>
         </div>
     </footer>
-
-
-
-    <!--back to top-->
-    <div class="m-backtotop" aria-hidden="true">
-        <div class="arrow-back">
-            <img src="img/top.png" alt="top.png">
-        </div>
-    </div>
 
 
 
