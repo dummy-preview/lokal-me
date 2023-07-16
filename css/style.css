@@ -7395,6 +7395,10 @@ ul.d li {
     .bg-home::after {
         width: 89%;
     }
+    .localartis__info {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 @media (max-width:1028px) {
