@@ -7114,6 +7114,29 @@ p.copyright {
     line-height: 28px;
 }
 
+.alert-upload {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.loader-upload {
+    width: 150px;
+}
+
+.alert-upload__text {
+    text-align: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #214868;
+    font-weight: 700;
+}
+
 .modal-title {
     font-style: normal;
     font-weight: 700;
