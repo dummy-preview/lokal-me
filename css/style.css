@@ -1287,7 +1287,7 @@ li.menu-item.current-menu-item {
 
 .localmusicbg-mask {
     position: absolute;
-    bottom: 10px;
+    bottom: 33px;
     right: 23px;
     z-index: 0;
     width: 95%;
@@ -1338,6 +1338,7 @@ li.menu-item.current-menu-item {
 }
 
 .localmusicbg {
+    bottom: 9px !important;
     right: 7px !important;
 }
 
