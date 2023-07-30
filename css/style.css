@@ -1248,6 +1248,15 @@ li.menu-item.current-menu-item {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-line-clamp: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal
 }
 
 .more-localmusic {
@@ -1329,7 +1338,6 @@ li.menu-item.current-menu-item {
 }
 
 .localmusicbg {
-    bottom: 2px !important;
     right: 7px !important;
 }
 
@@ -1476,6 +1484,15 @@ li.menu-item.current-menu-item {
     line-height: 24px;
     color: #FFFFFF;
     padding-top: 24px;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal
 }
 
 .localalbum-target {
@@ -1588,6 +1605,15 @@ li.menu-item.current-menu-item {
     line-height: 16px;
     color: #FFFFFF;
     padding-top: 11px;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal
 }
 
 .local-content__cta img {
@@ -1651,6 +1677,15 @@ li.menu-item.current-menu-item {
     font-size: 14px;
     line-height: 22px;
     color: #D0D05A;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal
 }
 
 .local-content__itemsmall--text p {
@@ -1659,6 +1694,15 @@ li.menu-item.current-menu-item {
     font-size: 10px;
     line-height: 16px;
     color: #FFFFFF;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal
 }
 
 .local-content__itemsmall--photo {
@@ -6631,8 +6675,12 @@ p.copyright {
     margin-top: 40px;
 }
 
-.photo__wrap img {
+.photo__wrap iframe {
     border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .photo__caption {
